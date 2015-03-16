@@ -1,8 +1,117 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.V1">
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.V1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_Primary</item>
+        <item name="colorPrimaryDark">@color/color_PrimaryDark</item>
+        <!--<item name="colorAccent">@color/color_Accent</item>-->
+        <item name="colorAccent">@color/color_PrimaryText</item>
+        <item name="colorControlHighlight">@color/color_Highlight</item>
+        
+        <item name="@android:style/Widget.TextView.SpinnerItem">@style/spinnerItemStyle</item>
+    </style>
+
+    <!--Widget and Layout========================================================================-->
+    <style name="editFragment_Header_Label" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/color_Primary</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Dialog box===============================================================================-->
+    <style name="dialogBox_confirm">
+        <item name="android:background">@drawable/dialog_box</item>
+    </style>
+
+    <!--Spinner==================================================================================-->
+    <style name="Spinner_editFragment" parent="android:Widget.Spinner">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+    </style>
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <!--Button===================================================================================-->
+    <style name="Button" parent="android:Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:width">120dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+    </style>
+
+    <style name="Button_Accept" parent="Button">
+        <item name="android:background">@drawable/btn_accept</item>
+    </style>
+
+    <style name="Button_Clear" parent="Button">
+        <item name="android:background">@drawable/btn_clear</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="Button_Delete" parent="Button">
+        <item name="android:background">@drawable/btn_delete</item>
+    </style>
+
+    <style name="Button_Category" parent="Button">
+        <item name="android:background">@drawable/btn_accept</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:width">50dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--editText=================================================================================-->
+    <style name="editText_editFragment" parent="@android:style/Widget.EditText">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColorHint">@color/color_SecondaryText</item>
+    </style>
+
+    <style name="editText_editFragmentV2" parent="Widget.AppCompat.EditText" >
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColorHint">@color/color_SecondaryText</item>
+    </style>
+
+    <!--textView=================================================================================-->
+    <style name="textView_label" parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="textView_itemList_header" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_Primary</item>
+    </style>
+
+    <style name="textView_itemList_label" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/color_PrimaryText</item>
+    </style>
+
+    <!--Divider==================================================================================-->
+    <style name="Divider_Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@android:drawable/divider_horizontal_textfield</item>
+    </style>
+
+    <!--Animation================================================================================-->
+    <style name="Dialog_Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_silde_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_silde_down</item>
     </style>
 
 </resources>

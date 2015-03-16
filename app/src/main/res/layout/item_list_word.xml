@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.9"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/textView_itemList_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Word" />
+
+            <TextView
+                style="@style/textView_itemList_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Terminology" />
+
+            <TextView
+                style="@style/textView_itemList_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Translated" />
+
+        </LinearLayout>
+        <!--end of layout_text_word-->
+
+        <LinearLayout
+            android:id="@+id/layoutItemListIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.1"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right">
+
+                <ImageButton
+                    android:id="@+id/ImgButtonVoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_volume_up_grey600_24dp" />
+
+                <ImageButton
+                    android:id="@+id/ImgButtonFav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_star_outline_20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textView_itemList_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:text="Computer" />
+
+
+        </LinearLayout>
+        <!--end of layout_IMG-->
+
+    </LinearLayout>
+</RelativeLayout>

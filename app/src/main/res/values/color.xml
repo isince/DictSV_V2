@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_Primary">#FF9800</color>
+    <color name="color_PrimaryDark">#F57C00</color>
+    <color name="color_PrimaryLight">#FFE0B2</color>
+    <color name="color_Accent">#03A9F4</color>
+    <color name="color_Highlight">#B6B6B6</color>
+    <color name="color_PrimaryText">#212121</color>
+    <color name="color_SecondaryText">#727272</color>
+    <color name="color_Icons">#FFFFFF</color>
+    <color name="color_Divider">#B6B6B6</color>
+
+    <color name="color_Background">#E4E4E4</color>
+    <color name="color_form">#F3F3F3</color>
+
+
+    <!--Button-->
+    <color name="color__Button_accept_default">@color/color_Primary</color>
+    <color name="color__Button_accept_press">@color/color_PrimaryDark</color>
+    <color name="color__Button_accept_disable">@color/color_PrimaryLight</color>
+
+    <color name="color__Button_clear_default">@color/color_PrimaryText</color>
+    <color name="color__Button_clear_press">@color/color_SecondaryText</color>
+
+    <color name="color__Button_delete_default">#ffc03d2a</color>
+    <color name="color__Button_delete_press">#ff93301a</color>
+
+
+
+
+</resources>

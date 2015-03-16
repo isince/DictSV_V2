@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ndsince.dictsv.Fragment.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_search__form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnChoiceCate"
+            style="@style/Button_Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cat" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="6dp"
+            android:hint="Search" />
+
+    </LinearLayout>
+    <!--end of layout search form-->
+
+    <ListView
+        android:id="@+id/searchFragment__listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search__form"
+        android:divider="@android:color/transparent">
+
+    </ListView>
+    <!--List View Search-->
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Edit Fragment-->
+    <dimen name="editFragment_Header__size">25dp</dimen>
+    <dimen name="editFragment_Layout__marginLR">30dp</dimen>
+
+    <dimen name="textView_title_editFragment_margin">20dp</dimen>
+    <dimen name="layout_form_padding">5dp</dimen>
+    <dimen name="textView_title">20dp</dimen>
+    <dimen name="layout_form_padding_RL">30dp</dimen>
+
+</resources>

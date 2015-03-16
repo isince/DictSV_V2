@@ -1,0 +1,363 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_Background"
+    tools:context="com.ndsince.dictsv.Fragment.EditFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layoutWordCreateHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/editFragment_Header_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="Word" />
+            </LinearLayout>
+            <!--end of layoutWordCreateHeader-->
+
+            <LinearLayout
+                android:id="@+id/layoutWordCreateForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutWordCreateHeader"
+                android:background="@color/color_form"
+                android:orientation="vertical">
+
+                <!--<ImageView xmlns:android="http://schemas.android.com/apk/res/android"style="@style/Divider_Content" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtVocabWord"
+                        style="@style/editText_editFragmentV2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="20dp"
+                        android:hint="New Word"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <!--<ImageView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                style="@style/Divider_Content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtVocabTermino"
+                        style="@style/editText_editFragmentV2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="10dp"
+                        android:hint="Terminology"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textView_title" />
+
+                </LinearLayout>
+
+                <!--<ImageView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--style="@style/Divider_Content" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtVocabTrans"
+                        style="@style/editText_editFragmentV2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="10dp"
+                        android:hint="Trans"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textView_title" />
+
+                </LinearLayout>
+
+                <!--<ImageView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--style="@style/Divider_Content" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+
+                        android:id="@+id/spnVocabFirst"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@android:drawable/divider_horizontal_textfield" />
+            </LinearLayout>
+            <!--end of layoutWordCreateForm-->
+
+            <LinearLayout
+
+                android:id="@+id/layoutWordCreateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutWordCreateForm"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnWordCreate"
+                    style="@style/Button_Accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Create" />
+
+
+                <Button
+                    android:id="@+id/btnWordClear"
+                    style="@style/Button_Clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear" />
+
+            </LinearLayout>
+            <!--end of layoutWordCreateButton-->
+
+            <LinearLayout
+                android:id="@+id/layoutCategoryEditHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutWordCreateButton"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/editFragment_Header_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Category" />
+            </LinearLayout>
+            <!--end of layoutCategoryEditHeader-->
+
+            <LinearLayout
+                android:id="@+id/layoutCategoryEditForm"
+                style="@style/editText_editFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCategoryEditHeader"
+                android:background="@color/color_form"
+                android:orientation="vertical">
+
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Divider_Content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkboxNewCate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="19dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="20dp"
+                        android:text="Create New Category" />
+
+
+                </LinearLayout>
+
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Divider_Content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+
+                        android:id="@+id/spnCateSecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="9dp" />
+
+                </LinearLayout>
+
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Divider_Content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtCateName"
+                        style="@style/editText_editFragmentV2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="19dp"
+                        android:hint="Category"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textView_title"/>
+                </LinearLayout>
+
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Divider_Content" />
+
+
+            </LinearLayout>
+            <!--end of layoutCategoryEditForm-->
+
+            <LinearLayout
+                android:id="@+id/layoutCategoryEditButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCategoryEditForm"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCateCreate"
+                    style="@style/Button_Accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Create" />
+
+
+                <Button
+                    android:id="@+id/btnCateClear"
+                    style="@style/Button_Clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear" />
+
+            </LinearLayout>
+            <!--end of layoutCategoryEditButton-->
+
+            <LinearLayout
+                android:id="@+id/layoutCategoryDelHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutCategoryEditButton"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/editFragment_Header_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Delete Category" />
+            </LinearLayout>
+            <!--end of layoutCategoryDelHeader-->
+
+            <LinearLayout
+                android:id="@+id/layoutCategoryDelForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCategoryDelHeader"
+                android:background="@color/color_form"
+                android:orientation="vertical">
+
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Divider_Content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spnCateThird"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginRight="@dimen/editFragment_Layout__marginLR"
+                        android:layout_marginTop="15dp" />
+                </LinearLayout>
+
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/Divider_Content" />
+            </LinearLayout>
+            <!--end of layoutCategoryDelForm-->
+
+            <LinearLayout
+                android:id="@+id/layoutCategoryDelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCategoryDelForm"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="50dp">
+
+                <Button
+                    android:id="@+id/btnCateDel"
+                    style="@style/Button_Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+
+            </LinearLayout>
+            <!--end of layoutCategoryDelButton-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
